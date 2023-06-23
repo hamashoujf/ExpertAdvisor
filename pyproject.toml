@@ -7,6 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pandas = "^2.0.2"
+cloudscraper = "^1.2.71"
 
 
 [build-system]

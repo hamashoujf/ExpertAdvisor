@@ -2,18 +2,17 @@ from abc import ABC, abstractmethod
 import pandas as pd
 
 class AbstractBlock(ABC):
-    @abstractmethod
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
     @abstractmethod
     def execute(self) -> pd.DataFrame:
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def schema(self) -> pd.DataFrame:
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def update(self) -> None:
-        pass
+        raise NotImplementedError
